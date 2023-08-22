@@ -8,6 +8,8 @@ At the end, the winner should be identified. Their model is the NCAA Basketball 
 
 ![bracket sample](./Images/bracket.PNG)
 
+---
+
 ## PLANNING STEP 1
 
 1. Tracks games played and ther outcome (who won).
@@ -34,6 +36,8 @@ At the end, the winner should be identified. Their model is the NCAA Basketball 
 13. Are there varying levels of access?
 14. Should this system contact users about upcoming games?
 15. Is each player on their own or can teams use this tournament tracker?
+
+---
 
 ## OVERVIEW PLANNING
 
@@ -88,6 +92,8 @@ Q: Is each player on their own or can teams use this tournament tracker?
 A: The tournament tracker should be able to handle the addition of other members.  
 All members should be treated as equals in that they all get tournament emails.  
 Teams should also be able to name their team.
+
+---
 
 ## BIG PICTURE DESIGN
 

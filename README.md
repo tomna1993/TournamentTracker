@@ -101,6 +101,8 @@ Teams should also be able to name their team.
 2. DATA: SQL and/or Text File
 3. USERS: One at a time on one application
 
+---
+
 ## KEY CONCEPTS
 
 - Email - how will I do that? How can I send an email?
@@ -110,3 +112,41 @@ Teams should also be able to name their team.
 - Interfaces - pass information back and forth
 - Random Ordering - how to randomize information, how to shuffle a list, how to generate random numbers
 - Texting - capture names, email addresses, phone numbers and other information to generate texts
+
+---
+
+## DATA DESIGN - MAPPING THE DATA
+
+1. Team
+   - TeamMembers (List\<Person>)
+   - TeamName (string)
+
+2. Person
+   - FirstName (string)
+   - LastName (string)
+   - EmailAddress (string)
+   - CellphoneNumber (string)
+
+3. Tournament
+   - TournamentName (string)
+   - EntryFee (decimal)
+   - EnteredTeams (List\<Teams>)
+   - Prizes (List\<Prize>)
+   - Rounds (List\<List\<Matchup>>)
+
+4. Prize
+   - PlaceNumber (int)
+   - PlaceName (string)
+   - PrizeAmount (decimal)
+   - PrizePercentage (double)
+
+5. Matchup
+   - Entries (List\<MatchupEntry>)
+   - Winner (Team)
+   - MatchupRound (int)
+
+6. MatchupEntry
+   - TeamCompeting (Team)
+   - Score (double)
+   - ParentMatchup (Matchup)
+

@@ -100,3 +100,13 @@ Teams should also be able to name their team.
 1. STRUCTURE: Windows Forms application and Class Library
 2. DATA: SQL and/or Text File
 3. USERS: One at a time on one application
+
+## KEY CONCEPTS
+
+- Email - how will I do that? How can I send an email?
+- SQL - how to access data?
+- Custom Events
+- Error Handling - we can't trust the user to give correct information all the time
+- Interfaces - pass information back and forth
+- Random Ordering - how to randomize information, how to shuffle a list, how to generate random numbers
+- Texting - capture names, email addresses, phone numbers and other information to generate texts

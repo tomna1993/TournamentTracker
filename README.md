@@ -97,3 +97,6 @@ Teams should also be able to name their team.
 
 ## BIG PICTURE DESIGN
 
+1. STRUCTURE: Windows Forms application and Class Library
+2. DATA: SQL and/or Text File
+3. USERS: One at a time on one application

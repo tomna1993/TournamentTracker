@@ -150,3 +150,28 @@ Teams should also be able to name their team.
    - Score (double)
    - ParentMatchup (Matchup)
 
+---
+
+## USER INTERFACE DESIGN
+
+### Tournament Viewer
+
+![Tournament Viewer Form](./Images/tournamentViewer.PNG)
+
+### Create Tournament
+
+![Create Tournament Form](./Images/createTournament.PNG)
+
+### Create Team
+
+![Create Team Form](./Images/createTeam.PNG)
+
+### Create Prize
+
+![Create Prize Form](./Images/createPrize.PNG)
+
+### Tournament Dashboard
+
+![Tournament Dashboard Form](./Images/tournamentDashboard.PNG)
+
+---

@@ -152,26 +152,111 @@ Teams should also be able to name their team.
 
 ---
 
-## USER INTERFACE DESIGN
-
-### Tournament Viewer
-
-![Tournament Viewer Form](./Images/tournamentViewer.PNG)
+## USER INTERFACE DESIGN AND LOGIC PLANNING
 
 ### Create Tournament
 
 ![Create Tournament Form](./Images/createTournament.PNG)
 
+1. Create New  
+   - create a new team -> open up Create Team Form  
+   - after creating a team we would want to return to the Create Tournament Form
+   - show the created team in Team/Players (tournamentPlayersListBox) listbox.
+
+2. Add Team  
+   - going to look at the Select Team dropdown list and put the selected item into the Team/Players (tournamentPlayersListBox) listbox
+   - once is done we need to update the dropdown list - clear the dropdown list and remove the added team or player from the list
+
+3. Create Prize  
+   - create new prize -> open up the Create Prize Form
+   - show the created prizes in the Prizes (prizesListBox) listbox
+
+4. Delete Selected  
+   - delete a selected item from the listbox
+   - in the Team/Player listbox there will be an additional step to put back the item to the Select Team dropdown list
+
+5. Create Tournament  
+   - first we need to validate all the information  
+      + make shure there is a trournament name and it is not used already
+	  + make shure the Entry Fee isn't a negative number
+	  + make shure we have at least two teams 
+   - second we have to create a schedule - the Tournament.Rounds list will be populated here
+
 ### Create Team
 
 ![Create Team Form](./Images/createTeam.PNG)
+
+1. Add Member
+   - take an existing team member from the Select Team Member dropdown list and add it to the tournamentPlayersListBox
+   - remove the member from the Select Team Member dropdown list
+
+2. Create Member
+   - validate the First Name, Last Name, Email and Cellphone information
+   - add the member to the tournamentPlayersListBox
+   - clear out the First Name, Last Name, Email and Cellphone fields
+
+3. Delete Member
+   - delete the selected member from the tournamentPlayersListBox [^1]
+
+4. Create Team
+   - validate the team and create it
+   - send information back to the caller
 
 ### Create Prize
 
 ![Create Prize Form](./Images/createPrize.PNG)
 
+1. Create Prize
+   - validate the Place Number, Place Name, Prize Amount and/or Prize Percentage fields
+   - send the information back to the calling form
+
 ### Tournament Dashboard
 
 ![Tournament Dashboard Form](./Images/tournamentDashboard.PNG)
 
----
+1. Load Tournament
+   - loads the selected tournament from the Load Existing Tournament dropdown list and opens the Tournament Viewer window
+
+2. Create Tournament
+   - opens the Create Torunament Form
+   - after the Create Tournament Form closes we have to return the created tournament and add it to the Load Existing Tournament dropdown list
+
+### Tournament Viewer
+
+![Tournament Viewer Form](./Images/tournamentViewer.PNG)
+
+1. Tournament: \<name>
+   - gets updated when we load a tournament
+
+2. Round
+   - this dropdown list is calculated
+   - it uses the Tournament.Rounds object to calculate how many rounds are in the Tournament.Rounds object
+   - if a tournament has 4 rounds we have to display in this dropdown list Round 1, Round 2, Round 3 and Round 4
+   - this dropdown will change what the matchupListBox shows
+
+3. Unplayed Only
+   - filter the matchupListBox to show only the unplayed matches by the round selected in the Round dropdown list
+
+4. Score fields
+   - Sample Team 1 and Sample Team 2 will be updated to show the team or player names
+   - if the team has a score it will show it in the Score field otherwise it will be empty
+
+5. Score
+   - saves the matchup scores and finalize and say that matchup is over and who is the winner 
+   - after the scoring we gonna have to figure out some way of triggering then other things based upon a matchup being scored
+   - f.e. if this is the last game in the round, hitting the Score button should trigger the next round
+   - email people when they schedule to play
+   - email out the result of the round
+   - if this is the last game in the last round (champion game) we trigger the end of tournament information
+     + assign prizes
+	 + trigger final email with who won, who got what prize and what are the results of the complete tournament
+
+### Other Pieces
+
+- data access - how we gonna access the data, store the data, how we gonna deal with t two diferent data sources (SQL and CSV)
+- how we gonna email out information, what triggers that
+- what triggers knowing who will play the next matchup
+
+
+
+[^1]: ! have to add a Delete Member button to the Create Team form

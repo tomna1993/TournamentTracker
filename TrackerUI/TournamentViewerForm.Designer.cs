@@ -35,8 +35,8 @@
             unplayedOnlyCheckBox = new CheckBox();
             matchupListBox = new ListBox();
             teamOneNameGroupBox = new GroupBox();
-            teamOneScoreLabel = new Label();
             teamOneScoreTextBox = new TextBox();
+            teamOneScoreLabel = new Label();
             teamTwoNameGroupBox = new GroupBox();
             teamTwoScoreTextBox = new TextBox();
             teamTwoScoreLabel = new Label();
@@ -115,6 +115,13 @@
             teamOneNameGroupBox.TabStop = false;
             teamOneNameGroupBox.Text = "<team one>";
             // 
+            // teamOneScoreTextBox
+            // 
+            teamOneScoreTextBox.Location = new Point(138, 56);
+            teamOneScoreTextBox.Name = "teamOneScoreTextBox";
+            teamOneScoreTextBox.Size = new Size(125, 43);
+            teamOneScoreTextBox.TabIndex = 1;
+            // 
             // teamOneScoreLabel
             // 
             teamOneScoreLabel.AutoSize = true;
@@ -123,13 +130,6 @@
             teamOneScoreLabel.Size = new Size(86, 38);
             teamOneScoreLabel.TabIndex = 0;
             teamOneScoreLabel.Text = "Score";
-            // 
-            // teamOneScoreTextBox
-            // 
-            teamOneScoreTextBox.Location = new Point(138, 56);
-            teamOneScoreTextBox.Name = "teamOneScoreTextBox";
-            teamOneScoreTextBox.Size = new Size(125, 43);
-            teamOneScoreTextBox.TabIndex = 1;
             // 
             // teamTwoNameGroupBox
             // 
@@ -160,6 +160,9 @@
             // 
             // scoreButton
             // 
+            scoreButton.FlatAppearance.BorderColor = Color.DimGray;
+            scoreButton.FlatAppearance.MouseDownBackColor = Color.White;
+            scoreButton.FlatAppearance.MouseOverBackColor = Color.White;
             scoreButton.Location = new Point(581, 506);
             scoreButton.Name = "scoreButton";
             scoreButton.Size = new Size(94, 50);
@@ -183,7 +186,7 @@
             Controls.Add(tournamentNameLabel);
             Controls.Add(tournamentLabel);
             Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
-            Margin = new Padding(6, 6, 6, 6);
+            Margin = new Padding(6);
             Name = "tournamentViewerForm";
             Text = "Torunament Viewer";
             teamOneNameGroupBox.ResumeLayout(false);

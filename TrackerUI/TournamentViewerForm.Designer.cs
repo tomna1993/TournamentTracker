@@ -54,7 +54,7 @@
             tournamentLabel.Name = "tournamentLabel";
             tournamentLabel.Size = new Size(234, 50);
             tournamentLabel.TabIndex = 0;
-            tournamentLabel.Text = "Torunament:";
+            tournamentLabel.Text = "Tournament:";
             // 
             // tournamentNameLabel
             // 

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TrackerUI
 {
-    public partial class CreatePrizeForm : Form
+    public partial class createPrizeForm : Form
     {
-        public CreatePrizeForm()
+        public createPrizeForm()
         {
             InitializeComponent();
         }

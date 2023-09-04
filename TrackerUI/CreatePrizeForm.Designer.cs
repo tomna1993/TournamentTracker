@@ -1,6 +1,6 @@
 ﻿namespace TrackerUI
 {
-    partial class CreatePrizeForm
+    partial class createPrizeForm
     {
         /// <summary>
         /// Required designer variable.
@@ -139,7 +139,7 @@
             orLabel.TabIndex = 34;
             orLabel.Text = "- or -";
             // 
-            // CreatePrizeForm
+            // createPrizeForm
             // 
             AutoScaleDimensions = new SizeF(15F, 37F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -158,7 +158,7 @@
             Controls.Add(placeNumberLabel);
             Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
             Margin = new Padding(6);
-            Name = "CreatePrizeForm";
+            Name = "createPrizeForm";
             Text = "Create Prize";
             ResumeLayout(false);
             PerformLayout();

@@ -37,15 +37,15 @@
             selectTeamMemberLabel = new Label();
             teamNameTextBox = new TextBox();
             teamNameLabel = new Label();
-            teamOneScoreTextBox = new TextBox();
+            firstNameTextBox = new TextBox();
             firstNameLabel = new Label();
             addNewMemberGroupBox = new GroupBox();
             createMemberButton = new Button();
-            textBox3 = new TextBox();
+            cellphoneTextBox = new TextBox();
             CellphoneLabel = new Label();
-            textBox2 = new TextBox();
+            emailTextBox = new TextBox();
             emailLabel = new Label();
-            textBox1 = new TextBox();
+            lastNameTextBox = new TextBox();
             lastNameLabel = new Label();
             addNewMemberGroupBox.SuspendLayout();
             SuspendLayout();
@@ -149,12 +149,12 @@
             teamNameLabel.TabIndex = 14;
             teamNameLabel.Text = "Team Name";
             // 
-            // teamOneScoreTextBox
+            // firstNameTextBox
             // 
-            teamOneScoreTextBox.Location = new Point(163, 58);
-            teamOneScoreTextBox.Name = "teamOneScoreTextBox";
-            teamOneScoreTextBox.Size = new Size(243, 43);
-            teamOneScoreTextBox.TabIndex = 1;
+            firstNameTextBox.Location = new Point(163, 58);
+            firstNameTextBox.Name = "firstNameTextBox";
+            firstNameTextBox.Size = new Size(243, 43);
+            firstNameTextBox.TabIndex = 1;
             // 
             // firstNameLabel
             // 
@@ -168,13 +168,13 @@
             // addNewMemberGroupBox
             // 
             addNewMemberGroupBox.Controls.Add(createMemberButton);
-            addNewMemberGroupBox.Controls.Add(textBox3);
+            addNewMemberGroupBox.Controls.Add(cellphoneTextBox);
             addNewMemberGroupBox.Controls.Add(CellphoneLabel);
-            addNewMemberGroupBox.Controls.Add(textBox2);
+            addNewMemberGroupBox.Controls.Add(emailTextBox);
             addNewMemberGroupBox.Controls.Add(emailLabel);
-            addNewMemberGroupBox.Controls.Add(textBox1);
+            addNewMemberGroupBox.Controls.Add(lastNameTextBox);
             addNewMemberGroupBox.Controls.Add(lastNameLabel);
-            addNewMemberGroupBox.Controls.Add(teamOneScoreTextBox);
+            addNewMemberGroupBox.Controls.Add(firstNameTextBox);
             addNewMemberGroupBox.Controls.Add(firstNameLabel);
             addNewMemberGroupBox.Location = new Point(15, 413);
             addNewMemberGroupBox.Name = "addNewMemberGroupBox";
@@ -196,12 +196,12 @@
             createMemberButton.Text = "Create Member";
             createMemberButton.UseVisualStyleBackColor = true;
             // 
-            // textBox3
+            // cellphoneTextBox
             // 
-            textBox3.Location = new Point(163, 236);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(243, 43);
-            textBox3.TabIndex = 7;
+            cellphoneTextBox.Location = new Point(163, 236);
+            cellphoneTextBox.Name = "cellphoneTextBox";
+            cellphoneTextBox.Size = new Size(243, 43);
+            cellphoneTextBox.TabIndex = 7;
             // 
             // CellphoneLabel
             // 
@@ -212,12 +212,12 @@
             CellphoneLabel.TabIndex = 6;
             CellphoneLabel.Text = "Cellphone";
             // 
-            // textBox2
+            // emailTextBox
             // 
-            textBox2.Location = new Point(163, 179);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(243, 43);
-            textBox2.TabIndex = 5;
+            emailTextBox.Location = new Point(163, 179);
+            emailTextBox.Name = "emailTextBox";
+            emailTextBox.Size = new Size(243, 43);
+            emailTextBox.TabIndex = 5;
             // 
             // emailLabel
             // 
@@ -228,12 +228,12 @@
             emailLabel.TabIndex = 4;
             emailLabel.Text = "Email";
             // 
-            // textBox1
+            // lastNameTextBox
             // 
-            textBox1.Location = new Point(163, 119);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(243, 43);
-            textBox1.TabIndex = 3;
+            lastNameTextBox.Location = new Point(163, 119);
+            lastNameTextBox.Name = "lastNameTextBox";
+            lastNameTextBox.Size = new Size(243, 43);
+            lastNameTextBox.TabIndex = 3;
             // 
             // lastNameLabel
             // 
@@ -281,15 +281,15 @@
         private Label selectTeamMemberLabel;
         private TextBox teamNameTextBox;
         private Label teamNameLabel;
-        private TextBox teamOneScoreTextBox;
+        private TextBox firstNameTextBox;
         private Label firstNameLabel;
         private GroupBox addNewMemberGroupBox;
         private Button createMemberButton;
-        private TextBox textBox3;
+        private TextBox cellphoneTextBox;
         private Label CellphoneLabel;
-        private TextBox textBox2;
+        private TextBox emailTextBox;
         private Label emailLabel;
-        private TextBox textBox1;
+        private TextBox lastNameTextBox;
         private Label lastNameLabel;
     }
 }

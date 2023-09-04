@@ -1,6 +1,6 @@
 ﻿namespace TrackerUI
 {
-    partial class CreateTeamForm
+    partial class createTeamForm
     {
         /// <summary>
         /// Required designer variable.
@@ -244,7 +244,7 @@
             lastNameLabel.TabIndex = 2;
             lastNameLabel.Text = "Last Name";
             // 
-            // CreateTeamForm
+            // createTeamForm
             // 
             AutoScaleDimensions = new SizeF(15F, 37F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -262,7 +262,7 @@
             Controls.Add(createTeamLabel);
             Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
             Margin = new Padding(6);
-            Name = "CreateTeamForm";
+            Name = "createTeamForm";
             Text = "Create Team";
             addNewMemberGroupBox.ResumeLayout(false);
             addNewMemberGroupBox.PerformLayout();
